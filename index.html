@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="formSection">
+            <div class="formContainer">
+                <h2 class="form__title">Contact Us</h2>
+                <form class="form__form">
+                    <div class="form__main">
+                        <div class="form__item">
+                            <label class="form__label" for="firstName">First name</label>
+                            <input class="form__input" required type="text" id="firstName" placeholder="First name">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="lastName">Last name</label>
+                            <input class="form__input" type="text" id="lastName" placeholder="Last name">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="emailAddress">Email address</label>
+                            <input class="form__input" required type="email" id="emailAddress" placeholder="Email address">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="enquiryTopic">Select the topic of enquiry</label>
+                            <select class="form__input select" required id="enquiryTopic">
+                                <option class="select__option" hidden value="">Select:</option>
+                                <option class="select__option" value="Account">Account</option>
+                                <option class="select__option" value="Bug">Bug</option>
+                                <option class="select__option" value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="messageArea">Write your message</label>
+                            <textarea class="form__textArea" required spellcheck="true" id="messageArea" rows="4" cols="15" placeholder="Type your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form__checkbox">
+                        <input required type="checkbox" id="TsAndCs">
+                        <label for="TsAndCs">Agree to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">terms and conditions</a></label>
+                    </div>
+                    <div class="form__button">
+                        <input class="btn" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

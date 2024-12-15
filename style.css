@@ -1,0 +1,123 @@
+/* Inspiration taken from https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 */
+
+/* General style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    padding: 0.5rem;
+    background-color: #38cc8c;
+    box-shadow: 2px 2px #25a76f;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Form style */
+
+.formSection{
+    background-image: URL(images/bg-intro-desktop.png);
+    background-color: #ff7a7a ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 5rem;
+}
+
+.form__title{
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 2.5rem; 
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.form__main{
+    column-count: 1;
+    column-gap: 2rem;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.form__checkbox{
+    text-align: center;
+    padding: 1rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form__button{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__textArea{
+    padding: 0.5rem 2rem;
+    resize: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Poppins";
+    border: 1px solid grey;
+    font-weight: 700;
+}
+
+.form__input{
+    padding: 0.5rem 2rem;
+    border: 1px solid grey ;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.form__textArea:focus,.form__input:focus{
+    border: 1px solid black ;
+    outline: 1px solid black;
+}
+
+.form__label{
+    margin-top: 1rem;
+    visibility: hidden;
+}
+
+.select{
+    margin-top: 0.9rem;
+    font-size: 1rem;
+    font-family: "Poppins",sans-serif;
+}
+
+@media screen and (min-width:800px){
+    
+    .form__main{
+        column-count: 2;
+    }
+
+}
